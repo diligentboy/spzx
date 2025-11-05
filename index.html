@@ -238,9 +238,6 @@
     <p style="font-size: 16px; color: #2c3e50; line-height: 1.6;">
       请留意电话通知，我们将尽快与您联系！
     </p>
-    <button onclick="resetToForm()" style="margin-top: 20px; padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">
-      重新填写
-    </button>
   </div>
 </div>
 
@@ -251,13 +248,6 @@
       document.getElementById('loading').style.display = 'none';
       document.getElementById('winner').style.display = 'none';
     });
-
-    // 重新填写函数
-    function resetToForm() {
-      document.getElementById('winner').style.display = 'none';
-      document.getElementById('form-page').style.display = 'block';
-      document.getElementById('info-form').reset();
-    }
 
     // 表单提交处理
     document.getElementById('info-form').addEventListener('submit', function (e) {
